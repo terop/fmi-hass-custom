@@ -87,10 +87,9 @@ class _BaseSensorClass(CoordinatorEntity):
         raise NotImplementedError(
             "Required update method is not implemented!")
 
-    # This has not been working correctly so comment it out for now
-    # @property
-    # def unique_id(self):
-    #    return self._unique_id
+    @property
+    def unique_id(self):
+       return self._unique_id
 
     @property
     def name(self):
